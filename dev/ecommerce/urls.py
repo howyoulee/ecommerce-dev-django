@@ -17,6 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.conf import settings
+
+from django.conf.urls.static import static
+
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+# 配置图片的url
+# 将 MEDIA_ROOT 目录下的文件挂载到 MEDIA_URL 这个路径上
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

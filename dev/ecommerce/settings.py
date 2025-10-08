@@ -120,6 +120,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [BASE_DIR / 'static']
+
+MEDIA_URL = 'media/'                    # 用户访问图片时的 URL 前缀
+MEDIA_ROOT = BASE_DIR / 'static/media'  # 图片实际保存在项目中的位置
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
