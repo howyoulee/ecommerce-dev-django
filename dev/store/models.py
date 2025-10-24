@@ -30,7 +30,7 @@ class Product(models.Model):
 
     slug = models.SlugField(max_length=250)
 
-    price = models.DecimalField(max_digits=4, decimal_places=2)
+    price = models.DecimalField(max_digits=5, decimal_places=2)
 
     # 先创建images的文件夹, 再设置所有图片存储到images里面
     image = models.ImageField(upload_to='images/')
