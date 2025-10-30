@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # me add
     'store',
+    'cart',
 ]
 
 MIDDLEWARE = [

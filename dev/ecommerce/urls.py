@@ -25,6 +25,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     path('', include('store.urls')),
+
+    path('cart/', include('cart.urls')),
 ]
 
 # 配置图片的url
