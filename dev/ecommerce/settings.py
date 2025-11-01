@@ -70,6 +70,7 @@ TEMPLATES = [
                                             # 你在 store/views.py 文件中定义了一个函数 categories，
                                             # Django 会在渲染模板时自动调用它，
                                             # 并把返回的内容添加到模板上下文中。
+                'cart.context_processors.cart',
             ],
         },
     },
