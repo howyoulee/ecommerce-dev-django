@@ -25,6 +25,10 @@ class Cart():
             self.cart[product.id] = {'price': str(product.price), 'qty': product_qty}
 
         self.session.modified = True
+    
+    def delete(self, product):
+         
+         product_id = str(product)
 
     def __len__(self):
 
